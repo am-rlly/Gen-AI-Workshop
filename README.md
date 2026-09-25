@@ -40,7 +40,7 @@ Browser (UI Update)
 1. **Clone or navigate to the project directory**:
 
    ```bash
-   cd "c:\Users\ashmit\Desktop\AI Chatbot"
+   cd "c:\Users\user\Desktop\AI Chatbot"
    ```
 
 2. **Install dependencies**:
