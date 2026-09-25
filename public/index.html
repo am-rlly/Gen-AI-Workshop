@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatus.AI - AI Chat</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="light-theme">
+  <!-- macOS Browser Frame Container -->
+  <div class="browser-frame">
+    <!-- Top Browser Header -->
+    <header class="browser-header">
+      <div class="window-controls">
+        <span class="control-dot red"></span>
+        <span class="control-dot yellow"></span>
+        <span class="control-dot green"></span>
+      </div>
+      <div class="nav-controls">
+        <button class="icon-btn" aria-label="Back">&lsaquo;</button>
+        <button class="icon-btn" aria-label="Forward">&rsaquo;</button>
+      </div>
+      <div class="url-bar">
+        <svg class="lock-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+          <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+        </svg>
+        <span class="url-text">apps.relatus-ai.one</span>
+      </div>
+      <div class="browser-actions">
+        <button class="icon-btn" aria-label="Share">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92c0-1.61-1.31-2.92-2.92-2.92z"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="New Tab">+</button>
+      </div>
+    </header>
+
+    <!-- Main Workspace Area -->
+    <div class="app-workspace">
+      <!-- Left Sidebar -->
+      <aside class="sidebar">
+        <div class="brand-section">
+          <div class="brand-logo">
+            <span class="logo-orb"></span>
+            <span class="brand-title">Relatus.AI</span>
+          </div>
+          <button class="sidebar-toggle" aria-label="Toggle Sidebar">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="nav-menu">
+          <a href="#" class="nav-item active">
+            <svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span>AI Chat</span>
+          </a>
+          <a href="#" class="nav-item">
+            <svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+            <span>AI Video</span>
+          </a>
+          <a href="#" class="nav-item">
+            <svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span>AI Image</span>
+          </a>
+          <a href="#" class="nav-item">
+            <svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            <span>Documents</span>
+          </a>
+          <a href="#" class="nav-item">
+            <svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>Community</span>
+          </a>
+          <a href="#" class="nav-item">
+            <svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>History</span>
+          </a>
+        </nav>
+
+        <!-- Recent Chats -->
+        <div class="sidebar-section">
+          <div class="section-title">Recent Chat</div>
+          <div class="recent-chats-list">
+            <button class="recent-chat-item">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <div class="chat-info">
+                <span class="chat-title">New Design Ideas for Work...</span>
+                <span class="chat-time">Just now</span>
+              </div>
+            </button>
+            <button class="recent-chat-item">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <div class="chat-info">
+                <span class="chat-title">Smoothie Recipe Suggestio...</span>
+                <span class="chat-time">Today, 08:52pm</span>
+              </div>
+            </button>
+            <button class="recent-chat-item">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <div class="chat-info">
+                <span class="chat-title">Tips for Daily Productivity...</span>
+                <span class="chat-time">Today, 09:48pm</span>
+              </div>
+            </button>
+          </div>
+          <button class="show-more-btn">Show More</button>
+        </div>
+
+        <!-- Settings & Help -->
+        <div class="sidebar-section bottom-section">
+          <div class="section-title">Settings & Help</div>
+          <a href="#" class="nav-item">
+            <svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            <span>Settings</span>
+          </a>
+          <a href="#" class="nav-item">
+            <svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <span>Help</span>
+          </a>
+
+          <!-- Theme Toggle Pill -->
+          <div class="theme-switcher">
+            <button class="theme-btn active" id="theme-light-btn">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+              <span>Light</span>
+            </button>
+            <button class="theme-btn" id="theme-dark-btn">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+              <span>Dark</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- User Profile Footer -->
+        <div class="user-profile">
+          <div class="user-avatar">JW</div>
+          <div class="user-details">
+            <span class="user-name">Jenny Wilson</span>
+            <span class="user-email">jenny@gmail.com</span>
+          </div>
+          <button class="more-opts-btn" aria-label="More Options">&vellip;</button>
+        </div>
+      </aside>
+
+      <!-- Main Content Container -->
+      <main class="main-content">
+        <!-- Main Top Bar -->
+        <header class="main-header">
+          <div class="header-left">
+            <h2>AI Chat</h2>
+          </div>
+          <div class="header-right">
+            <!-- Search Bar -->
+            <div class="search-input-wrapper">
+              <svg class="search-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <input type="text" placeholder="Search" aria-label="Search">
+              <span class="shortcut-badge">⌘K</span>
+            </div>
+
+            <!-- Model Dropdown -->
+            <div class="model-dropdown">
+              <span class="model-status-dot"></span>
+              <span class="model-name">Relatus 2.0</span>
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
+            </div>
+
+            <!-- Create Chat Primary Button -->
+            <button class="create-chat-btn" id="create-chat-btn">
+              <span>+ Create Chat</span>
+            </button>
+          </div>
+        </header>
+
+        <!-- Dynamic Body Area -->
+        <div class="content-body" id="content-body">
+          <!-- Hero / Welcome View -->
+          <div class="welcome-view" id="welcome-view">
+            <!-- Floating Glowing Orb Graphic -->
+            <div class="glowing-orb-wrapper">
+              <div class="glowing-orb"></div>
+            </div>
+
+            <!-- Title & Subtitle -->
+            <h1 class="welcome-title">Welcome to Relatus.AI</h1>
+            <p class="welcome-subtitle">Get started by Relatus a task and Chat can do the rest.<br>Not sure where to start?</p>
+
+            <!-- Feature Suggestion Cards -->
+            <div class="feature-cards-grid">
+              <!-- Card 1 -->
+              <button class="feature-card" data-prompt="Start my day with focus and help me set three main goals to accomplish.">
+                <div class="card-icon-badge blue">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                </div>
+                <h3>Productivity Boost</h3>
+                <p>Start your day with focus. Set three main goals you want to accomplish.</p>
+              </button>
+
+              <!-- Card 2 -->
+              <button class="feature-card" data-prompt="Give me a user-friendly onboarding guide to organize my daily tasks.">
+                <div class="card-icon-badge yellow">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </div>
+                <h3>User-Friendly Onboarding</h3>
+                <p>Start your day with focus. Set three main goals you want to accomplish.</p>
+              </button>
+
+              <!-- Card 3 -->
+              <button class="feature-card" data-prompt="How can voice-activated AI tools improve daily efficiency?">
+                <div class="card-icon-badge pink">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                </div>
+                <h3>Voice-Activated Responses</h3>
+                <p>Start your day with focus. Set three main goals you want to accomplish.</p>
+              </button>
+            </div>
+          </div>
+
+          <!-- Chat Conversation View (Hidden initially) -->
+          <div class="chat-messages-view hidden" id="chat-messages">
+            <!-- Messages stream here dynamically -->
+          </div>
+        </div>
+
+        <!-- Bottom Floating Input Area -->
+        <div class="input-container-wrapper">
+          <div class="input-card">
+            <form id="chat-form" onsubmit="return false;">
+              <div class="textarea-row">
+                <textarea 
+                  id="user-input" 
+                  placeholder="Ask me anything..." 
+                  rows="2"
+                  maxlength="1500"
+                  aria-label="Message Input"
+                ></textarea>
+                <button type="submit" id="send-btn" class="send-action-btn" aria-label="Send Message">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Toolbar Action Footer inside Input -->
+              <div class="input-toolbar">
+                <div class="toolbar-actions">
+                  <button type="button" class="toolbar-btn">
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+                    <span>Attach</span>
+                  </button>
+                  <button type="button" class="toolbar-btn">
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>
+                    <span>Voice Message</span>
+                  </button>
+                  <button type="button" class="toolbar-btn">
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
+                    <span>Browse Prompts</span>
+                  </button>
+                </div>
+                <div class="char-count">
+                  <span id="char-counter">0</span>/1,500
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Disclaimer Text -->
+          <p class="disclaimer-text">
+            Relatus may display inaccurate info, so please double-check the response. <a href="#">Your Privacy &amp; Relatus.AI</a>
+          </p>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
